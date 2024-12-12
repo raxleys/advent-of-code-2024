@@ -1,4 +1,4 @@
-with open("input-day2.txt") as f:
+with open("input-day02.txt") as f:
     lines = [l.strip() for l in f.readlines() if l.strip() != ""]
 
 # Part 1

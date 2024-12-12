@@ -2,7 +2,7 @@ import itertools
 
 # Part 1
 data = []
-with open("input-day7.txt") as f:
+with open("input-day07.txt") as f:
     for line in (l.strip() for l in f.readlines() if l.strip() != ""):
         val, eq = line.split(":")
         data.append((int(val), [int(n) for n in eq.split(" ") if n != ""]))

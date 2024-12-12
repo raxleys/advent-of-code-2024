@@ -1,6 +1,6 @@
 # Part 1
 _map = []
-with open("input-day6.txt") as f:
+with open("input-day06.txt") as f:
     for line in f.readlines():
         _map.append(list(line.strip()))
 

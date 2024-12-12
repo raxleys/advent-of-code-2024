@@ -77,7 +77,7 @@ def find_all_diag(data):
     return find_diag_fwd(data) + find_diag_fwd_up(data) + find_diag_bwd_up(data) + find_diag_bwd(data)
 
 
-with open("input-day4.txt") as f:
+with open("input-day04.txt") as f:
     data = []
     for l in f.readlines():
         data.append(list(l.strip()))

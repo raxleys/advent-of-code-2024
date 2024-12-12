@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-with open("input-day5.txt") as f:
+with open("input-day05.txt") as f:
     data = f.read()
 
 # Part 1

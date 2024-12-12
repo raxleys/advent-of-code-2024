@@ -2,7 +2,7 @@ from collections import defaultdict
 
 # Part 1
 _map = []
-with open("input-day8.txt") as f:
+with open("input-day08.txt") as f:
     for line in f.readlines():
         _map.append(list(line.strip()))
 

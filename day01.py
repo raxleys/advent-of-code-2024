@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 # Part 1
-with open("input-day1.txt") as f:
+with open("input-day01.txt") as f:
     lines = [l.strip() for l in f.readlines()]
 
 firsts = []
