@@ -100,3 +100,15 @@ pub fn split_columns_int(input: &Vec<String>) -> Res<(Vec<i32>, Vec<i32>)> {
 
     Ok((first, second))
 }
+
+pub fn lines_to_ints(input: &Vec<String>) -> Res<Vec<Vec<i32>>> {
+    let mut vecs = Vec::new();
+    for line in input {
+        let mut nvec = Vec::new();
+        for num in line.split_whitespace() {
+            nvec.push(num.parse::<i32>()?);
+        }
+        vecs.push(nvec);
+    }
+    Ok(vecs)
+}
