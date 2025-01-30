@@ -1,9 +1,10 @@
-mod day1;
-mod day2;
+mod day01;
+mod day02;
+mod day03;
 mod utils;
 use utils::{Res, Soln};
 
-const SOLNS: &[Soln] = &[day1::DAY1_SOLN, day2::DAY2_SOLN];
+const SOLNS: &[Soln] = &[day01::DAY1_SOLN, day02::DAY2_SOLN, day03::DAY3_SOLN];
 
 fn main() -> Res<()> {
     if let Some(args) = utils::parse_args() {
