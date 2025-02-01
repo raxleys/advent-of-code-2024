@@ -101,10 +101,10 @@ fn part2(input: &Vec<String>) -> Res<i32> {
         .collect();
 
     let mut count = 0;
-    let FIRST_LETS: HashSet<char> = vec!['M', 'S'].into_iter().collect();
+    let first_lets: HashSet<char> = vec!['M', 'S'].into_iter().collect();
     for (i, line) in matrix.iter().enumerate() {
         for (j, _) in line.iter().enumerate() {
-            if !FIRST_LETS.contains(&matrix[i][j]) {
+            if !first_lets.contains(&matrix[i][j]) {
                 continue;
             }
 
@@ -113,9 +113,9 @@ fn part2(input: &Vec<String>) -> Res<i32> {
             }
 
             if matrix[i + 1][j + 1] != 'A'
-                || !FIRST_LETS.contains(&matrix[i][j + 2])
-                || !FIRST_LETS.contains(&matrix[i + 2][j])
-                || !FIRST_LETS.contains(&matrix[i + 2][j + 2])
+                || !first_lets.contains(&matrix[i][j + 2])
+                || !first_lets.contains(&matrix[i + 2][j])
+                || !first_lets.contains(&matrix[i + 2][j + 2])
             {
                 continue;
             }

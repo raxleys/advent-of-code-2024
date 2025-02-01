@@ -2,6 +2,7 @@ mod day01;
 mod day02;
 mod day03;
 mod day04;
+mod day05;
 mod utils;
 use utils::{Res, Soln};
 
@@ -10,6 +11,7 @@ const SOLNS: &[Soln] = &[
     day02::DAY2_SOLN,
     day03::DAY3_SOLN,
     day04::DAY4_SOLN,
+    day05::DAY5_SOLN,
 ];
 
 fn main() -> Res<()> {
