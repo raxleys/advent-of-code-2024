@@ -1,6 +1,3 @@
-#![allow(unused_imports)]
-#![allow(unused_variables)]
-#![allow(dead_code)]
 use crate::utils;
 use std::collections::{HashMap, HashSet};
 use utils::{Res, Soln};
