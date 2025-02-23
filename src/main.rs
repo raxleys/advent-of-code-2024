@@ -5,6 +5,7 @@ mod day04;
 mod day05;
 mod day06;
 mod day13;
+mod day14;
 mod utils;
 use utils::{Res, Soln};
 
@@ -35,6 +36,7 @@ const SOLNS: &[Soln] = &[
     DUMMY_SOLN,
     // 13
     day13::DAY13_SOLN,
+    day14::DAY14_SOLN,
 ];
 
 fn main() -> Res<()> {
