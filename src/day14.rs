@@ -117,7 +117,41 @@ fn part1(input: &Vec<String>) -> Res<i32> {
     Ok(ans)
 }
 
+// Way too vague of a question. Thanks to this post:
+// https://todd.ginsberg.com/post/advent-of-code/2024/day14/ for
+// explaining that they found out that when there is no robot
+// overlapping on any tiles, the christmas tree can be seen.
+fn part2(input: &Vec<String>) -> Res<i32> {
+    let mut robot_data = parse_robot_data(&input);
+    let mut count = 0;
+    loop {
+        let mut map = vec![vec![0; WIDTH]; HEIGHT];
+        let mut next = false;
+        for robot in &robot_data {
+            let x = robot.pos.0 as usize;
+            let y = robot.pos.1 as usize;
+            map[y][x] += 1;
+            if map[y][x] > 1 {
+                next = true;
+                break;
+            }
+        }
+
+        if next {
+            robot_data.iter_mut().for_each(|robot| robot.go());
+            count += 1;
+            continue;
+        }
+
+        break;
+    }
+
+    draw_map(&robot_data);
+
+    Ok(count)
+}
+
 pub const DAY14_SOLN: Soln = Soln {
     first: part1,
-    second: utils::dummy_soln,
+    second: part2,
 };
