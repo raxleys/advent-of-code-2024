@@ -114,7 +114,7 @@ fn part2(input: &Vec<String>) -> Res<i32> {
     Ok(n_ok_reports as i32)
 }
 
-pub const DAY2_SOLN: Soln = Soln {
+pub const DAY02_SOLN: Soln = Soln {
     first: part1,
     second: part2,
 };

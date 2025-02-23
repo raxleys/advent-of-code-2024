@@ -190,7 +190,7 @@ fn part2(input: &Vec<String>) -> Res<i32> {
     Ok(ans)
 }
 
-pub const DAY3_SOLN: Soln = Soln {
+pub const DAY03_SOLN: Soln = Soln {
     first: part1,
     second: part2,
 };

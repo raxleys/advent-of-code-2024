@@ -4,16 +4,35 @@ mod day03;
 mod day04;
 mod day05;
 mod day06;
+mod day12;
 mod utils;
 use utils::{Res, Soln};
 
+// Dummy
+const DUMMY_SOLN: Soln = Soln {
+    first: utils::dummy_soln,
+    second: utils::dummy_soln,
+};
+
 const SOLNS: &[Soln] = &[
-    day01::DAY1_SOLN,
-    day02::DAY2_SOLN,
-    day03::DAY3_SOLN,
-    day04::DAY4_SOLN,
-    day05::DAY5_SOLN,
-    day06::DAY6_SOLN,
+    day01::DAY01_SOLN,
+    day02::DAY02_SOLN,
+    day03::DAY03_SOLN,
+    day04::DAY04_SOLN,
+    day05::DAY05_SOLN,
+    day06::DAY06_SOLN,
+    // 7
+    DUMMY_SOLN,
+    // 8
+    DUMMY_SOLN,
+    // 9
+    DUMMY_SOLN,
+    // 10
+    DUMMY_SOLN,
+    // 11
+    DUMMY_SOLN,
+    // 12
+    day12::DAY12_SOLN,
 ];
 
 fn main() -> Res<()> {

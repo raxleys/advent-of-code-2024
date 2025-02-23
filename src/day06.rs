@@ -109,7 +109,7 @@ fn part2(input: &Vec<String>) -> Res<i32> {
     todo!()
 }
 
-pub const DAY6_SOLN: Soln = Soln {
+pub const DAY06_SOLN: Soln = Soln {
     first: part1,
     second: part2,
 };

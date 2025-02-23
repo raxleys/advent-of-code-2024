@@ -138,7 +138,7 @@ fn part2(input: &Vec<String>) -> Res<i32> {
     Ok(count)
 }
 
-pub const DAY4_SOLN: Soln = Soln {
+pub const DAY04_SOLN: Soln = Soln {
     first: part1,
     second: part2,
 };
