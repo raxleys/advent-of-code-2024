@@ -76,7 +76,7 @@ fn part1(input: &Vec<String>) -> Res<i32> {
     Ok(soln)
 }
 
-pub const DAY12_SOLN: Soln = Soln {
+pub const DAY13_SOLN: Soln = Soln {
     first: part1,
     second: utils::dummy_soln,
 };
