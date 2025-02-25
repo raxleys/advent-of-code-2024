@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
+#![allow(unused_imports)]
 use crate::utils::{self, Res, Soln};
 
 const WIDTH: usize = 101;
