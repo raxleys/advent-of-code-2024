@@ -6,6 +6,7 @@ mod day05;
 mod day06;
 mod day13;
 mod day14;
+mod day15;
 mod day17;
 mod utils;
 use utils::{Res, Soln};
@@ -38,7 +39,7 @@ const SOLNS: &[Soln] = &[
     // 13
     day13::DAY13_SOLN,
     day14::DAY14_SOLN,
-    DUMMY_SOLN,
+    day15::DAY15_SOLN,
     DUMMY_SOLN,
     day17::DAY17_SOLN,
 ];
